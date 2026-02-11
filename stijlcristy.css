@@ -1,0 +1,359 @@
+:root {
+  font-size: 62.5%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+main ul.arrivals::-webkit-scrollbar {
+  display: none; /* geen scrollbalk bij de arrivals */
+}
+/* hier komt jouw css */
+body {
+  background-color: black;
+}
+header {
+  width: 100%;
+  background-color: burlywood;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 10vh;
+}
+header h1 {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  left: 45vw;
+}
+header nav {
+  display: none;
+}
+header nav.active {
+  display: block;
+}
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 10vh;
+  width: 20%;
+  line-height: 3rem;
+  padding-left: 1rem;
+  background-color: rgb(228, 171, 96);
+  text-align: center;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav ul li {
+  border-top: 1px solid black;
+  margin-right: 1rem;
+}
+header nav ul li:nth-child(1) {
+  border-top: none;
+}
+main .welkom {
+  background-image: url(cristy/WWW.jpg);
+  height: 80vh;
+  width: 100%;
+  background-size: contain;
+  background-position: 100% center;
+}
+main .arrivals {
+  display: flex;
+  gap: 1rem;
+  overflow: scroll;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+main .arrivals li {
+  flex: 0 0 calc(50% - 0.5rem);
+  scroll-snap-align: start;
+  border-radius: 10px;
+  background-size: cover;
+}
+main .arrivals li a {
+  position: relative;
+  left: 18vw;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  top: 45vh;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  width: 20vw;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.arrivals li {
+  height: 50vh;
+}
+
+footer {
+  margin-top: 5rem;
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+}
+footer h1 {
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+/*photos*/
+.arrivals li.A {
+  background-image: url(cristy/A.jpg);
+}
+.arrivals li.B {
+  background-image: url(cristy/B.jpg);
+}
+.arrivals li.C {
+  background-image: url(cristy/C.jpg);
+}
+.arrivals li.D {
+  background-image: url(cristy/D.jpg);
+}
+.arrivals li.E {
+  background-image: url(cristy/E.jpg);
+}
+.arrivals li.F {
+  background-image: url(cristy/F.jpg);
+}
+.arrivals li.G {
+  background-image: url(cristy/G.jpg);
+}
+.arrivals li.H {
+  background-image: url(cristy/H.jpg);
+}
+.arrivals li.I {
+  background-image: url(cristy/I.jpg);
+}
+.arrivals li.J {
+  background-image: url(cristy/J.jpg);
+}
+.arrivals li.K {
+  background-image: url(cristy/K.jpg);
+}
+.arrivals li.L {
+  background-image: url(cristy/L.jpg);
+}
+.arrivals li.M {
+  background-image: url(cristy/M.jpg);
+}
+.arrivals li.N {
+  background-image: url(cristy/N.jpg);
+}
+.arrivals li.O {
+  background-image: url(cristy/O.jpg);
+}
+.arrivals li.Q {
+  background-image: url(cristy/Q.jpg);
+}
+.arrivals li.R {
+  background-image: url(cristy/R.jpg);
+}
+.arrivals li.S {
+  background-image: url(cristy/S.jpg);
+}
+.arrivals li.T {
+  background-image: url(cristy/T.jpg);
+}
+.arrivals li.U {
+  background-image: url(cristy/U.jpg);
+}
+.arrivals li.V {
+  background-image: url(cristy/V.jpg);
+}
+.arrivals li.W {
+  background-image: url(cristy/W.jpg);
+}
+.arrivals li.X {
+  background-image: url(cristy/X.jpg);
+}
+.arrivals li.Y {
+  background-image: url(cristy/Y.jpg);
+}
+.arrivals li.Z {
+  background-image: url(cristy/Z.jpg);
+  background-position: top;
+}
+.arrivals li.AA {
+  background-image: url(cristy/AA.jpg);
+}
+.arrivals li.BB {
+  background-image: url(cristy/BB.jpg);
+}
+.arrivals li.CC {
+  background-image: url(cristy/CC.jpg);
+}
+.arrivals li.DD {
+  background-image: url(cristy/DD.jpg);
+}
+.arrivals li.EE {
+  background-image: url(cristy/EE.jpg);
+}
+.arrivals li.FF {
+  background-image: url(cristy/FF.jpg);
+}
+.arrivals li.GG {
+  background-image: url(cristy/GG.jpg);
+}
+.arrivals li.HH {
+  background-image: url(cristy/HH.jpg);
+}
+.arrivals li.II {
+  background-image: url(cristy/II.jpg);
+}
+.arrivals li.JJ {
+  background-image: url(cristy/JJ.jpg);
+}
+.arrivals li.KK {
+  background-image: url(cristy/KK.jpg);
+}
+.arrivals li.LL {
+  background-image: url(cristy/LL.jpg);
+}
+.arrivals li.MM {
+  background-image: url(cristy/MM.jpg);
+}
+.arrivals li.NN {
+  background-image: url(cristy/NN.jpg);
+}
+.arrivals li.OO {
+  background-image: url(cristy/OO.jpg);
+}
+.arrivals li.PP {
+  background-image: url(cristy/PP.jpg);
+}
+.arrivals li.QQ {
+  background-image: url(cristy/QQ.jpg);
+}
+.arrivals li.RR {
+  background-image: url(cristy/RR.jpg);
+}
+.arrivals li.SS {
+  background-image: url(cristy/SS.jpg);
+}
+.arrivals li.TT {
+  background-image: url(cristy/TT.jpg);
+}
+.arrivals li.UU {
+  background-image: url(cristy/UU.jpg);
+}
+.arrivals li.VV {
+  background-image: url(cristy/VV.jpg);
+}
+.arrivals li.WW {
+  background-image: url(cristy/WW.jpg);
+}
+.arrivals li.XX {
+  background-image: url(cristy/XX.jpg);
+}
+.arrivals li.YY {
+  background-image: url(cristy/YY.jpg);
+}
+.arrivals li.ZZ {
+  background-image: url(cristy/ZZ.jpg);
+}
+.arrivals li.AAA {
+  background-image: url(cristy/AAA.jpg);
+}
+.arrivals li.BBB {
+  background-image: url(cristy/BBB.jpg);
+}
+.arrivals li.CCC {
+  background-image: url(cristy/CCC.jpg);
+}
+.arrivals li.DDD {
+  background-image: url(cristy/DDD.jpg);
+}
+.arrivals li.EEE {
+  background-image: url(cristy/EEE.jpg);
+}
+.arrivals li.FFF {
+  background-image: url(cristy/FFF.jpg);
+}
+.arrivals li.GGG {
+  background-image: url(cristy/GGG.jpg);
+}
+.arrivals li.HHH {
+  background-image: url(cristy/HHH.jpg);
+}
+.arrivals li.III {
+  background-image: url(cristy/III.jpg);
+}
+.arrivals li.JJJ {
+  background-image: url(cristy/JJJ.jpg);
+}
+.arrivals li.KKK {
+  background-image: url(cristy/KKK.jpg);
+}
+.arrivals li.LLL {
+  background-image: url(cristy/LLL.jpg);
+}
+.arrivals li.MMM {
+  background-image: url(cristy/MMM.jpg);
+}
+.arrivals li.NNN {
+  background-image: url(cristy/NNN.jpg);
+}
+.arrivals li.OOO {
+  background-image: url(cristy/OOO.jpg);
+}
+.arrivals li.PPP {
+  background-image: url(cristy/PPP.jpg);
+}
+.arrivals li.QQQ {
+  background-image: url(cristy/QQQ.jpg);
+}
+.arrivals li.RRR {
+  background-image: url(cristy/RRR.jpg);
+}
+.arrivals li.SSS {
+  background-image: url(cristy/SSS.jpg);
+}
+.arrivals li.TTT {
+  background-image: url(cristy/TTT.jpg);
+}
+.arrivals li.UUU {
+  background-image: url(cristy/UUU.jpg);
+}
+.arrivals li.VVV {
+  background-image: url(cristy/VVV.jpg);
+}
+.arrivals li.WWW {
+  background-image: url(cristy/WWW.jpg);
+}
+.arrivals li.XXX {
+  background-image: url(cristy/XXX.jpg);
+}
+.arrivals li.YYY {
+  background-image: url(cristy/YYY.png);
+}
+.arrivals li.ZZZ {
+  background-image: url(cristy/ZZZ.jpg);
+}
+@media (min-width: 700px) {
+  main .arrivals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}

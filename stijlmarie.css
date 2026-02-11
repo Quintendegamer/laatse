@@ -1,0 +1,360 @@
+:root {
+  font-size: 62.5%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+main ul.arrivals::-webkit-scrollbar {
+  display: none; /* geen scrollbalk bij de arrivals */
+}
+/* hier komt jouw css */
+body {
+  background-color: black;
+}
+header {
+  width: 100%;
+  background-color: burlywood;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 10vh;
+}
+header h1 {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  left: 45vw;
+}
+header nav {
+  display: none;
+}
+header nav.active {
+  display: block;
+}
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 10vh;
+  width: 20%;
+  line-height: 3rem;
+  padding-left: 1rem;
+  background-color: rgb(228, 171, 96);
+  text-align: center;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav ul li {
+  border-top: 1px solid black;
+  margin-right: 1rem;
+}
+header nav ul li:nth-child(1) {
+  border-top: none;
+}
+main .welkom {
+  background-image: url(marie/1.jpg);
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-position: 100% center;
+}
+main .arrivals {
+  display: flex;
+  gap: 1rem;
+  overflow: scroll;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+main .arrivals li {
+  flex: 0 0 calc(50% - 0.5rem);
+  scroll-snap-align: start;
+  border-radius: 10px;
+  background-size: cover;
+}
+main .arrivals li a {
+  position: relative;
+  left: 18vw;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  top: 45vh;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  width: 20vw;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.arrivals li {
+  height: 50vh;
+}
+/*photos*/
+.arrivals li.fr1 {
+  background-image: url(marie/0024d54d-7111-41c0-4f04-fbc2f4708332.jpg);
+}
+.arrivals li.fr2 {
+  background-image: url(marie/0b73845c-91a9-47da-4f0d-ff51e9daec02.jpg);
+}
+.arrivals li.fr3 {
+  background-image: url(marie/152caf7b-8882-4acf-7920-e3e82d39f192.jpg);
+}
+.arrivals li.fr4 {
+  background-image: url(marie/1d6c3993-4c0d-4507-6c48-44e2e4a490f9.jpg);
+}
+.arrivals li.fr5 {
+  background-image: url(marie/1ed3ef34-5410-492a-76d1-54ad87b35f43.jpg);
+}
+.arrivals li.fr6 {
+  background-image: url(marie/2f64e8bd-fd47-40e6-7887-8149914e435a.jpg);
+}
+.arrivals li.fr7 {
+  background-image: url(marie/3e407b44-7601-457b-4093-c7b0cf293a32.jpg);
+}
+.arrivals li.fr8 {
+  background-image: url(marie/424649960_865286795607215_4034490953538226292_n.jpg);
+}
+.arrivals li.fr9 {
+  background-image: url(marie/479277866_17970889538829739_4980337703981989304_n.jpg);
+}
+.arrivals li.fr10 {
+  background-image: url(marie/4af6141b-689b-4a44-5ab7-3e257b0c63b5.jpg);
+}
+.arrivals li.fr11 {
+  background-image: url(marie/59a6873b-c603-455d-40a1-a85b7641f405.jpg);
+}
+.arrivals li.fr12 {
+  background-image: url(marie/9fab8644-651b-4888-5fd0-04da30a5f348.jpg);
+}
+.arrivals li.fr13 {
+  background-image: url(marie/a04b9a31-4e7c-4829-5c78-79ccfd2f5003.jpg);
+}
+.arrivals li.fr14 {
+  background-image: url(marie/da12c1d9-f72b-47b3-7282-07cba82c4c36.jpg);
+}
+.arrivals li.fr15 {
+  background-image: url(marie/IMG_4584.JPG);
+}
+.arrivals li.fr16 {
+  background-image: url(marie/IMG_4585.JPG);
+}
+.arrivals li.fr17 {
+  background-image: url(marie/IMG_4645.JPG);
+}
+.arrivals li.fr18 {
+  background-image: url(marie/IMG_4780.JPEG);
+}
+.arrivals li.fr19 {
+  background-image: url(marie/IMG_4781.JPEG);
+}
+.arrivals li.fr20 {
+  background-image: url(marie/IMG_5016.JPEG);
+}
+.arrivals li.fr21 {
+  background-image: url(marie/IMG_5298.JPEG);
+}
+.arrivals li.fr22 {
+  background-image: url(marie/IMG_5299.JPEG);
+}
+.arrivals li.fr23 {
+  background-image: url(marie/IMG_5338.JPEG);
+}
+.arrivals li.fr24 {
+  background-image: url(marie/IMG_6711.JPEG);
+}
+.arrivals li.fr25 {
+  background-image: url(marie/IMG_6712.JPEG);
+}
+
+.arrivals li.fr27 {
+  background-image: url(marie/IMG_6716.JPEG);
+}
+.arrivals li.fr28 {
+  background-image: url(marie/IMG_7177.JPG);
+}
+.arrivals li.fr29 {
+  background-image: url(marie/IMG_7215.JPEG);
+}
+.arrivals li.fr30 {
+  background-image: url(marie/mary-nabokova_0083.jpg);
+}
+.arrivals li.fr31 {
+  background-image: url(marie/mary-nabokova_0122.jpg);
+}
+.arrivals li.fr32 {
+  background-image: url(marie/mary-nabokova_0124.jpg);
+}
+.arrivals li.fr33 {
+  background-image: url(marie/mary-nabokova_0125.jpg);
+}
+.arrivals li.fr34 {
+  background-image: url(marie/mary-nabokova_0213.jpg);
+}
+.arrivals li.fr35 {
+  background-image: url(marie/mary-nabokova_0252.JPEG);
+}
+.arrivals li.fr36 {
+  background-image: url(marie/mary-nabokova_0256.jpg);
+}
+.arrivals li.fr37 {
+  background-image: url(marie/mary-nabokova_0316.jpg);
+}
+
+.arrivals li.fr39 {
+  background-image: url(marie/mary-nabokova_0318.jpg);
+}
+.arrivals li.fr40 {
+  background-image: url(marie/mary-nabokova_0329.jpg);
+}
+.arrivals li.fr41 {
+  background-image: url(marie/mary-nabokova_0330.jpg);
+}
+.arrivals li.fr42 {
+  background-image: url(marie/mary-nabokova_0411.jpg);
+}
+.arrivals li.fr43 {
+  background-image: url(marie/mary-nabokova_0416.jpg);
+}
+.arrivals li.fr44 {
+  background-image: url(marie/mary-nabokova_0477.JPEG);
+}
+.arrivals li.fr49 {
+  background-image: url(marie/mary-nabokova_0520.jpg);
+}
+.arrivals li.fr46 {
+  background-image: url(marie/mary-nabokova_0535.jpg);
+}
+.arrivals li.fr47 {
+  background-image: url(marie/mary-nabokova_0537.jpg);
+}
+.arrivals li.fr48 {
+  background-image: url(marie/mary-nabokova_0539.jpg);
+}
+.arrivals li.fr45 {
+  background-image: url(marie/mary-nabokova_0540.jpg);
+}
+.arrivals li.fr50 {
+  background-image: url(marie/mary-nabokova_0603.jpeg);
+}
+.arrivals li.fr51 {
+  background-image: url(marie/mary-nabokova_0770.jpg);
+}
+.arrivals li.fr52 {
+  background-image: url(marie/p9cly1XB.jpeg);
+}
+footer {
+  margin-top: 5rem;
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+}
+footer h1 {
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+@media (min-width: 1000px) {
+  .vid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* dit is de sleutel 👇 */
+  .vid li {
+    display: flex;
+    align-items: center; /* verticaal centreren */
+    justify-content: center; /* horizontaal centreren */
+  }
+
+  .vid video {
+    width: 100%;
+    max-height: 100%;
+  }
+  .vid video:nth-child(1) {
+    max-height: 70%;
+  }
+  main .arrivals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  main .arrivals li {
+    height: 80vh;
+  }
+  main .down .A {
+    margin-top: 2rem;
+    background-image: url(marie/groot.jpg);
+    background-size: contain;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: center;
+    margin-bottom: 1rem;
+  }
+  main .down .B {
+    margin-top: 2rem;
+    background-image: url(marie/groot2.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: center;
+    margin-bottom: 1rem;
+  }
+  main .down .C {
+    margin-top: 2rem;
+    background-image: url(marie/groot3.jpg);
+    background-size: contain;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: center;
+    margin-bottom: 1rem;
+  }
+  main .down .D {
+    margin-top: 2rem;
+    background-image: url(marie/groot4.jpg);
+    background-size: contain;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: center;
+    margin-bottom: 1rem;
+  }
+}

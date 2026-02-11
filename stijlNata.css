@@ -1,0 +1,1317 @@
+/* drie basisstijlregels om je te helpen */
+:root {
+  font-size: 62.5%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+main ul.arrivals::-webkit-scrollbar {
+  display: none; /* geen scrollbalk bij de arrivals */
+}
+/* hier komt jouw css */
+body {
+  background-color: black;
+}
+header {
+  width: 100%;
+  background-color: burlywood;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 10vh;
+}
+header h1 {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  left: 45vw;
+}
+header nav {
+  display: none;
+}
+header nav.active {
+  display: block;
+}
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 10vh;
+  width: 20%;
+  line-height: 3rem;
+  padding-left: 1rem;
+  background-color: rgb(237, 188, 125);
+  text-align: center;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav ul li {
+  border-top: 1px solid black;
+  margin-right: 1rem;
+}
+header nav ul li:nth-child(1) {
+  border-top: none;
+}
+main .welkom {
+  background-image: url(groot/W.JPEG);
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-position: 100% center;
+}
+main h2 {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main .arrivals {
+  display: flex;
+  gap: 1rem;
+  overflow: scroll;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+main .arrivals li {
+  flex: 0 0 calc(50% - 0.5rem);
+  scroll-snap-align: start;
+  border-radius: 10px;
+}
+main .arrivals li a {
+  position: relative;
+  left: 18vw;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  top: 45vh;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  width: 20vw;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+main .arrivals li:nth-child(1) {
+  background-image: url(img/1-natalee-007_0029.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li:nth-child(2) {
+  background-image: url(img/13760331.JPEG);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li:nth-child(3) {
+  background-image: url(img/15691347.webp);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li:nth-child(4) {
+  background-image: url(img/15691362.webp);
+  background-size: cover;
+  height: 50vh;
+}
+main .down .illustration img {
+  margin-top: 2rem;
+  max-width: 100%;
+  height: 79vh;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 2rem;
+}
+main .down .men {
+  margin-top: 2rem;
+  background-image: url(img/3e7a2d6aed7cbabd69de62298c5d1bc5.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 90%;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 2rem;
+}
+main .down .women {
+  margin-top: 2rem;
+  background-image: url(img/457247599.JPEG);
+  background-size: cover;
+  height: 100vh;
+  width: 90%;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 2rem;
+}
+main .down .caption {
+  margin-top: 2rem;
+  background-image: url(img/457247669.JPEG);
+  background-size: cover;
+  height: 100vh;
+  width: 90%;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 2rem;
+}
+main .arrivals li.photo5 {
+  background-image: url(img/457247646.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main .arrivals li.photo6 {
+  background-image: url(img/2f3c6dcc287b88d78e5730b57d293ad1.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.photo7 {
+  background-image: url(img/7f08fa71bfc864a8068b35184c343c77.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.photo8 {
+  background-image: url(img/IMG_4325.JPEG);
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+main .down .men1 {
+  display: none;
+}
+main .down {
+  display: none;
+}
+main .arrivals li {
+  background-position: center;
+  background-size: cover;
+}
+
+main .arrivals li.item-1 {
+  background-image: url(bien/07d4cae075112f88f7a55edffdf6f2be.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-2 {
+  background-image: url(bien/13760071.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-3 {
+  background-image: url(bien/33dbe9a9-3f12-4d1c-a757-ad37d40d8587.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-4 {
+  background-image: url(bien/3fd125c3-1c86-488e-9f43-70b69d85d258.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-5 {
+  background-image: url(bien/457247553.JPEG);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-6 {
+  background-image: url(bien/457247755.JPEG);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-7 {
+  background-image: url(bien/457251434.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-8 {
+  background-image: url(bien/5k2tWE6P7gjtWGNDHKvBHJvQxNmeimrH53mQcKJW.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-9 {
+  background-image: url(bien/6da6075e6725b4ca6e229b9f5b9f7a1f.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-10 {
+  background-image: url(bien/6F1FD849-A38B-47FC-A9CE-0CEE7705E6F0.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-11 {
+  background-image: url(bien/76ba3861fef1868f68ad2560b07de0c1.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-12 {
+  background-image: url(bien/9cd397dcec92952d551d05d238d127a1.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-13 {
+  background-image: url(bien/c065da5941d75122ad2148c15e62d28d.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-14 {
+  background-image: url(bien/c0795175ea2c9d21896795fd765443a2.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-15 {
+  background-image: url(bien/c361d31ff6446327e261279d65221d56.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-16 {
+  background-image: url(bien/c94e2f686af8da1fd028906755d28645.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-17 {
+  background-image: url(bien/dL16N4lo_t.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-18 {
+  background-image: url(bien/e22aa0fe3a3fc6a035a87d867e0ba631.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-19 {
+  background-image: url(bien/FC23B697-4605-4C90-8293-B37A7463D6EA.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-20 {
+  background-image: url(bien/FygFZwDXoAAWCIz.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-21 {
+  background-image: url(bien/IMG_4319.JPEG);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-22 {
+  background-image: url(bien/IMG_4322.JPG);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-23 {
+  background-image: url(bien/IMG_4324.JPEG);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-24 {
+  background-image: url(bien/IMG_4326.JPEG);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-25 {
+  background-image: url(bien/IMG_4327.JPG);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-26 {
+  background-image: url(bien/IMG_5893.JPG);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-27 {
+  background-image: url(bien/IMG_6156.JPG);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-28 {
+  background-image: url(bien/IMG_6683.JPEG);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-29 {
+  background-image: url(bien/IMG_6696.JPEG);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-30 {
+  background-image: url(bien/nata-lee_0991.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-31 {
+  background-image: url(bien/A.JPEG);
+  background-size: cover;
+  height: 50vh;
+}
+main .arrivals li.item-32 {
+  background-image: url(bien/b.webp);
+  background-size: cover;
+  height: 50vh;
+}
+.arrivals li {
+  height: 50vh;
+}
+.arrivals li.a1 {
+  background-image: url(A/B/IMG_7899.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.b1 {
+  background-image: url(A/B/IMG_7898.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.c1 {
+  background-image: url(A/B/IMG_7897.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.d1 {
+  background-image: url(A/B/IMG_7896.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.e1 {
+  background-image: url(A/B/IMG_7893.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.f1 {
+  background-image: url(A/B/IMG_7892.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.g1 {
+  background-image: url(A/B/IMG_7890.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.h1 {
+  background-image: url(A/B/IMG_7888.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.i1 {
+  background-image: url(A/B/IMG_7887.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.j1 {
+  background-image: url(A/B/IMG_7886.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.k1 {
+  background-image: url(A/B/IMG_7885.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.l1 {
+  background-image: url(A/B/IMG_7884.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.m1 {
+  background-image: url(naaa/natalee-1_0078.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.n1 {
+  background-image: url(A/B/IMG_7882.JPG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.o1 {
+  background-image: url(A/B/IMG_7881.JPG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.p1 {
+  background-image: url(A/B/IMG_7880.JPG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.q1 {
+  background-image: url(A/B/IMG_7879.JPG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.r1 {
+  background-image: url(A/B/IMG_7878.JPG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.s1 {
+  background-image: url(A/B/IMG_7868.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.t1 {
+  background-image: url(A/B/IMG_7867.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.u1 {
+  background-image: url(A/B/IMG_7841.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.v1 {
+  background-image: url(A/B/IMG_7811.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.w1 {
+  background-image: url(A/B/IMG_7810.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.x1 {
+  background-image: url(A/B/c.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.y1 {
+  background-image: url(A/B/IMG_7805.PNG);
+  background-position: center;
+  background-size: cover;
+}
+
+.arrivals li.z1 {
+  background-image: url(A/B/IMG_7766.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+.arrivals li.aa1 {
+  background-image: url(A/B/A.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+.arrivals li.aa2 {
+  background-image: url(A/B/B.JPG);
+  background-position: center;
+  background-size: cover;
+}
+.arrivals li.roze3 {
+  background-image: url(roze/IMG_7959.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+.arrivals li.roze2 {
+  background-image: url(roze/IMG_7960.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+.arrivals li.roze1 {
+  background-image: url(roze/IMG_7961.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+.arrivals li.roze4 {
+  background-image: url(roze/IMG_7967.JPEG);
+  background-position: center;
+  background-size: cover;
+}
+.arrivals li.fr1 {
+  background-image: url(frech/IMG_7915.JPG);
+}
+.arrivals li.fr2 {
+  background-image: url(frech/IMG_7917.JPG);
+}
+.arrivals li.fr3 {
+  background-image: url(frech/IMG_7920.JPG);
+}
+.arrivals li.fr4 {
+  background-image: url(frech/IMG_7926.JPG);
+}
+.arrivals li.fr5 {
+  background-image: url(frech/IMG_7962.JPEG);
+}
+.arrivals li.fr6 {
+  background-image: url(frech/IMG_7968.JPEG);
+}
+.arrivals li.fr7 {
+  background-image: url(frech/IMG_7964.PNG);
+}
+.arrivals li.fr8 {
+  background-image: url(frech/IMG_7914.JPEG);
+}
+.arrivals li.fr9 {
+  background-image: url(bord/IMG_6620.JPG);
+}
+.arrivals li.fr10 {
+  background-image: url(bord/IMG_7990.JPEG);
+}
+.arrivals li.fr11 {
+  background-image: url(bord/IMG_7992.JPEG);
+}
+.arrivals li.fr12 {
+  background-image: url(bord/IMG_7993.JPEG);
+}
+.arrivals li.fr13 {
+  background-image: url(bord/IMG_7994.JPEG);
+}
+.arrivals li.fr14 {
+  background-image: url(bord/IMG_7995.JPEG);
+}
+.arrivals li.fr15 {
+  background-image: url(bord/IMG_7996.JPEG);
+}
+.arrivals li.fr16 {
+  background-image: url(bord/IMG_8019.JPG);
+}
+.arrivals li.fr17 {
+  background-image: url(gijl/IMG_7997.JPEG);
+}
+.arrivals li.fr18 {
+  background-image: url(gijl/IMG_7998.JPEG);
+}
+.arrivals li.fr19 {
+  background-image: url(gijl/IMG_7999.JPEG);
+}
+.arrivals li.fr20 {
+  background-image: url(gijl/IMG_8001.JPEG);
+}
+.arrivals li.fr21 {
+  background-image: url(gijl/IMG_8002.JPEG);
+}
+.arrivals li.fr22 {
+  background-image: url(gijl/IMG_8003.JPEG);
+}
+.arrivals li.fr23 {
+  background-image: url(gijl/IMG_8004.JPEG);
+}
+.arrivals li.fr24 {
+  background-image: url(gijl/IMG_8005.JPEG);
+}
+.arrivals li.fr25 {
+  background-image: url(gijl/IMG_8007.JPEG);
+}
+.arrivals li.fr26 {
+  background-image: url(gijl/IMG_8010.JPEG);
+}
+.arrivals li.fr27 {
+  background-image: url(gijl/IMG_8012.PNG);
+}
+.arrivals li.fr28 {
+  background-image: url(gijl/IMG_8013.JPEG);
+}
+.arrivals li.fr29 {
+  background-image: url(gijl/IMG_8018.JPEG);
+}
+.arrivals li.fr30 {
+  background-image: url(gijl/IMG_8015.JPEG);
+}
+.arrivals li.fr31 {
+  background-image: url(gijl/IMG_8016.JPEG);
+}
+.arrivals li.fr32 {
+  background-image: url(gijl/IMG_8017.JPEG);
+}
+.arrivals li.fr33 {
+  background-image: url(gijl/IMG_8014.JPEG);
+}
+.arrivals li.fr34 {
+  background-image: url(gijl/IMG_8020.JPG);
+}
+.arrivals li.fr57 {
+  background-image: url(gijl/IMG_8021.JPG);
+}
+.arrivals li.fr36 {
+  background-image: url(gijl/IMG_8022.JPG);
+}
+.arrivals li.fr37 {
+  background-image: url(gijl/IMG_8023.JPG);
+}
+.arrivals li.fr38 {
+  background-image: url(gijl/IMG_8024.JPG);
+}
+.arrivals li.fr39 {
+  background-image: url(gijl/IMG_8025.JPG);
+}
+.arrivals li.fr40 {
+  background-image: url(gijl/IMG_8026.JPG);
+}
+.arrivals li.fr41 {
+  background-image: url(gijl/IMG_8027.JPG);
+}
+.arrivals li.fr42 {
+  background-image: url(gijl/IMG_8032.JPG);
+}
+.arrivals li.fr43 {
+  background-image: url(gijl/IMG_8028.JPG);
+}
+.arrivals li.fr44 {
+  background-image: url(gijl/IMG_8029.JPG);
+}
+.arrivals li.fr45 {
+  background-image: url(gijl/IMG_8030.JPG);
+}
+.arrivals li.fr46 {
+  background-image: url(gijl/IMG_8033.JPG);
+}
+.arrivals li.fr47 {
+  background-image: url(gijl/IMG_8034.JPG);
+}
+.arrivals li.fr48 {
+  background-image: url(gijl/IMG_8040.JPEG);
+}
+.arrivals li.fr49 {
+  background-image: url(e/nata-lee-bikini.jpg);
+}
+.arrivals li.fr50 {
+  background-image: url(e/nata-lee-bikini\ \(1\).jpg);
+}
+.arrivals li.fr51 {
+  background-image: url(e/nata-lee-bikini\ \(2\).jpg);
+}
+.arrivals li.fr52 {
+  background-image: url(e/nata-lee.jpg);
+}
+.arrivals li.fr53 {
+  background-image: url(e/natalee-007-1_0062.jpg);
+}
+.arrivals li.fr54 {
+  background-image: url(e/natalee-1_0052.jpg);
+}
+.arrivals li.fr55 {
+  background-image: url(e/natalee-1_0057.jpg);
+}
+.arrivals li.fr56 {
+  background-image: url(e/natalee-1_0057\ \(1\).jpg);
+}
+.arrivals li.fr35 {
+  background-image: url(naaa/nata-lee-2_0656.jpg);
+}
+.arrivals li.fr61 {
+  background-image: url(naaa/nata-lee-2_0661.jpg);
+}
+.arrivals li.fr59 {
+  background-image: url(naaa/natalee-1_0073.jpg);
+}
+.arrivals li.fr60 {
+  background-image: url(naaa/natalee-1_0074.jpg);
+}
+.arrivals li.fr58 {
+  background-image: url(A/B/IMG_7883.JPG);
+}
+.arrivals li.fr62 {
+  background-image: url(naaa/natalee-1_0080.jpg);
+}
+.arrivals li.fr63 {
+  background-image: url(naaa/natalee-1_0076.jpg);
+}
+.arrivals li.fr64 {
+  background-image: url(C/0d1e01c1c690889901c5d0c7516bb0c5.jpg);
+}
+.arrivals li.fr65 {
+  background-image: url(C/IMG_8047.JPEG);
+}
+.arrivals li.fr66 {
+  background-image: url(C/IMG_8048.JPEG);
+}
+.arrivals li.fr67 {
+  background-image: url(C/IMG_8049.JPEG);
+}
+.arrivals li.fr68 {
+  background-image: url(C/IMG_8050.JPEG);
+}
+.arrivals li.fr75 {
+  background-image: url(C/IMG_8075\ \(1\).JPEG);
+}
+.arrivals li.fr70 {
+  background-image: url(C/n.jpeg);
+}
+.arrivals li.fr71 {
+  background-image: url(C/n.png);
+}
+.arrivals li.fr72 {
+  background-image: url(C/qenlAfbm.jpeg);
+}
+.arrivals li.fr69 {
+  background-image: url(C/temDb4MA.jpeg);
+}
+.arrivals li.fr74 {
+  background-image: url(C/eerst.jpg);
+}
+.arrivals li.fr73 {
+  background-image: url(C/tweed.jpg);
+}
+.arrivals li.fr76 {
+  background-image: url(C/1.jpg);
+}
+.arrivals li.fr77 {
+  background-image: url(C/2.jpg);
+}
+.arrivals li.fr78 {
+  background-image: url(C/3.jpg);
+}
+.arrivals li.fr79 {
+  background-image: url(C/4.png);
+}
+.arrivals li.fr80 {
+  background-image: url(C/5.jpg);
+}
+.arrivals li.fr81 {
+  background-image: url(C/6.jpg);
+}
+.arrivals li.fr82 {
+  background-image: url(C/laatst.jpeg);
+}
+.arrivals li.qu1 {
+  background-image: url(jawel/A1.JPEG);
+}
+.arrivals li.qu2 {
+  background-image: url(jawel/A2.JPEG);
+}
+.arrivals li.qu3 {
+  background-image: url(jawel/B1.JPEG);
+}
+.arrivals li.qu4 {
+  background-image: url(jawel/B2.JPEG);
+}
+.arrivals li.qu5 {
+  background-image: url(jawel/B3.JPEG);
+}
+.arrivals li.qu6 {
+  background-image: url(jawel/B4.JPEG);
+}
+.arrivals li.qu7 {
+  background-image: url(jawel/B5.JPEG);
+}
+.arrivals li.qu8 {
+  background-image: url(jawel/B6.JPEG);
+}
+.arrivals li.qu9 {
+  background-image: url(jawel/B7.JPG);
+}
+.arrivals li.qu10 {
+  background-image: url(jawel/B8.JPG);
+}
+
+.arrivals li.qu11 {
+  background-image: url(jawel/C1.JPEG);
+}
+.arrivals li.qu12 {
+  background-image: url(jawel/C2.JPEG);
+}
+.arrivals li.qu13 {
+  background-image: url(jawel/C3.JPEG);
+}
+.arrivals li.qu14 {
+  background-image: url(jawel/C4.JPEG);
+}
+.arrivals li.qu15 {
+  background-image: url(jawel/D1.JPEG);
+}
+.arrivals li.qu16 {
+  background-image: url(jawel/D2.JPEG);
+}
+.arrivals li.qu17 {
+  background-image: url(jawel/D3.JPEG);
+}
+.arrivals li.qu18 {
+  background-image: url(jawel/D4.JPEG);
+}
+.arrivals li.qu19 {
+  background-image: url(jawel/D5.JPEG);
+}
+.arrivals li.qu20 {
+  background-image: url(jawel/D6.JPEG);
+}
+
+.arrivals li.qu21 {
+  background-image: url(jawel/E1.JPEG);
+}
+.arrivals li.qu22 {
+  background-image: url(jawel/E2.JPEG);
+}
+.arrivals li.qu23 {
+  background-image: url(jawel/E3.JPEG);
+}
+.arrivals li.qu24 {
+  background-image: url(jawel/E4.JPEG);
+}
+.arrivals li.qu25 {
+  background-image: url(jawel/F1.JPEG);
+}
+.arrivals li.qu26 {
+  background-image: url(jawel/F2.JPEG);
+}
+.arrivals li.qu27 {
+  background-image: url(jawel/G1.JPEG);
+}
+.arrivals li.qu28 {
+  background-image: url(jawel/G2.JPEG);
+}
+.arrivals li.qu29 {
+  background-image: url(jawel/G3.JPEG);
+}
+.arrivals li.qu30 {
+  background-image: url(jawel/H1.JPEG);
+}
+
+.arrivals li.qu31 {
+  background-image: url(jawel/H2.JPEG);
+}
+.arrivals li.qu32 {
+  background-image: url(jawel/H3.JPEG);
+}
+.arrivals li.qu33 {
+  background-image: url(jawel/H4.JPEG);
+}
+.arrivals li.qu34 {
+  background-image: url(jawel/I1.JPEG);
+}
+.arrivals li.qu35 {
+  background-image: url(jawel/I2.JPEG);
+}
+.arrivals li.qu36 {
+  background-image: url(jawel/I3.JPEG);
+}
+.arrivals li.qu37 {
+  background-image: url(jawel/I4.JPEG);
+}
+.arrivals li.qu38 {
+  background-image: url(jawel/I5.JPEG);
+}
+.arrivals li.qu39 {
+  background-image: url(jawel/I6.JPEG);
+}
+.arrivals li.qu40 {
+  background-image: url(jawel/I7.JPEG);
+}
+
+.arrivals li.qu41 {
+  background-image: url(jawel/J1.JPEG);
+}
+.arrivals li.qu42 {
+  background-image: url(jawel/J2.JPEG);
+}
+.arrivals li.qu43 {
+  background-image: url(jawel/J3.JPEG);
+}
+.arrivals li.qu44 {
+  background-image: url(jawel/J4.JPEG);
+}
+.arrivals li.qu45 {
+  background-image: url(jawel/J5.JPEG);
+}
+.arrivals li.qu46 {
+  background-image: url(jawel/J6.JPEG);
+}
+.arrivals li.qu47 {
+  background-image: url(jawel/J7.JPEG);
+}
+.arrivals li.qu48 {
+  background-image: url(jawel/J8.JPEG);
+}
+.arrivals li.qu49 {
+  background-image: url(jawel/K1.JPEG);
+}
+.arrivals li.qu50 {
+  background-image: url(jawel/K2.JPEG);
+}
+
+.arrivals li.qu51 {
+  background-image: url(jawel/K3.JPEG);
+}
+.arrivals li.qu52 {
+  background-image: url(jawel/L1.JPEG);
+}
+.arrivals li.qu53 {
+  background-image: url(jawel/L2.JPEG);
+}
+.arrivals li.qu54 {
+  background-image: url(jawel/L3.JPEG);
+}
+
+.vid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  margin: 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.vid li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vid video {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  margin-top: 5rem;
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+}
+footer h1 {
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.vid li.videe {
+  display: none;
+}
+@media (min-width: 700px) {
+  .vid {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* dit is de sleutel 👇 */
+  .vid li {
+    display: flex;
+    align-items: center; /* verticaal centreren */
+    justify-content: center; /* horizontaal centreren */
+  }
+
+  .vid video {
+    width: 100%;
+    max-height: 100%;
+  }
+  .vid video:nth-child(1) {
+    max-height: 70%;
+  }
+  main .arrivals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  main .down {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  main .down .illustration img {
+    height: 100vh;
+    width: 90%;
+  }
+  main .down .IK {
+    margin-top: 2rem;
+    background-image: url(groot/nieuw.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: bottom;
+  }
+  main .down .men1 {
+    margin-top: 2rem;
+    background-image: url(img/68094b369873ef4140fe7e432fe06564.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+  }
+  main .down .women1 {
+    margin-top: 2rem;
+    background-image: url(img/IMG_5741.JPEG);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: bottom;
+  }
+  main .down .A {
+    margin-top: 2rem;
+    background-image: url(groot/02_294727.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: bottom;
+  }
+  main .down .B {
+    margin-top: 2rem;
+    background-image: url(groot/02_3600009.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: bottom;
+  }
+  main .down .C {
+    margin-top: 2rem;
+    background-image: url(groot/15691265.JPEG);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: bottom;
+  }
+  main .down .D {
+    margin-top: 2rem;
+    background-image: url(groot/457247973.JPEG);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: bottom;
+  }
+  main .down .E {
+    margin-top: 2rem;
+    background-image: url(groot/47f429017ffea979fa199cbae5545fa4.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: bottom;
+  }
+  main .down .F {
+    margin-top: 2rem;
+    background-image: url(groot/IMG_8041.JPEG);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: bottom;
+  }
+  main .down .G {
+    margin-top: 2rem;
+    background-image: url(groot/c4d50c6be558175966bc30670f977c6d.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: bottom;
+  }
+  main .down .H {
+    margin-top: 2rem;
+    background-image: url(groot/devushki-natalya-krasavina--nata-lee-nat-1646892.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: bottom;
+  }
+  main .down .i {
+    margin-top: 2rem;
+    background-image: url(A/B/groot2.JPEG);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: bottom;
+  }
+  main .down .j {
+    margin-top: 2rem;
+    background-image: url(A/B/groot3.JPEG);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: bottom;
+  }
+  main .down .k {
+    margin-top: 2rem;
+    background-image: url(A/B/R.JPEG);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: bottom;
+    background-position: 30%;
+  }
+  main .down .l {
+    margin-top: 2rem;
+    background-image: url(A/B/groot5.JPEG);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: bottom;
+  }
+  main .down .Z {
+    margin-top: 2rem;
+    background-image: url(A/B/groot.JPEG);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: bottom;
+  }
+  main .down .m {
+    margin-top: 2rem;
+    background-image: url(A/B/T.JPEG);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: bottom;
+    background-position: 30%;
+  }
+  main .down .n {
+    margin-top: 2rem;
+    background-image: url(A/B/Y.JPEG);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: bottom;
+  }
+  main .down .p {
+    margin-top: 2rem;
+    background-image: url(jawel/GROOT1.JPEG);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: bottom;
+  }
+  main .down .q {
+    margin-top: 2rem;
+    background-image: url(jawel/GROOT2!!.JPEG);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: bottom;
+  }
+  main .down .r {
+    margin-top: 2rem;
+    background-image: url(jawel/GROOT3.JPEG);
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 6rem;
+    grid-column: 1/3;
+    background-position: bottom;
+  }
+}

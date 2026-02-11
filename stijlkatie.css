@@ -1,0 +1,535 @@
+:root {
+  font-size: 62.5%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+main ul.arrivals::-webkit-scrollbar {
+  display: none; /* geen scrollbalk bij de arrivals */
+}
+/* hier komt jouw css */
+body {
+  background-color: black;
+}
+header {
+  width: 100%;
+  background-color: burlywood;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 10vh;
+}
+header h1 {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  left: 45vw;
+}
+header nav {
+  display: none;
+}
+header nav.active {
+  display: block;
+}
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 10vh;
+  width: 20%;
+  line-height: 3rem;
+  padding-left: 1rem;
+  background-color: rgb(228, 171, 96);
+  text-align: center;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav ul li {
+  border-top: 1px solid black;
+  margin-right: 1rem;
+}
+header nav ul li:nth-child(1) {
+  border-top: none;
+}
+main .welkom {
+  background-image: url(katie/Fap_9c890163ab6e7f1165d8f75b9ca6f584.webp);
+  height: 85vh;
+  width: 100%;
+  background-size: cover;
+  background-position: 0% 63%;
+}
+main .arrivals {
+  display: flex;
+  gap: 1rem;
+  overflow: scroll;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+main .arrivals li {
+  flex: 0 0 calc(50% - 0.5rem);
+  scroll-snap-align: start;
+  border-radius: 10px;
+  background-size: cover;
+}
+main .arrivals li a {
+  position: relative;
+  left: 18vw;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  top: 45vh;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  width: 20vw;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.arrivals li {
+  height: 50vh;
+}
+
+footer {
+  margin-top: 5rem;
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+}
+footer h1 {
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.arrivals li.A {
+  background-image: url(katie/A.jpg);
+}
+.arrivals li.B {
+  background-image: url(katie/B.jpg);
+}
+.arrivals li.C {
+  background-image: url(katie/C.jpg);
+}
+.arrivals li.D {
+  background-image: url(katie/D.jpg);
+}
+.arrivals li.E {
+  background-image: url(katie/E.jpg);
+}
+.arrivals li.F {
+  background-image: url(katie/F.jpg);
+}
+.arrivals li.G {
+  background-image: url(katie/G.webp);
+}
+.arrivals li.H {
+  background-image: url(katie/H.webp);
+}
+.arrivals li.I {
+  background-image: url(katie/I.webp);
+}
+.arrivals li.J {
+  background-image: url(katie/J.webp);
+}
+.arrivals li.K {
+  background-image: url(katie/K.webp);
+}
+.arrivals li.L {
+  background-image: url(katie/L.webp);
+}
+.arrivals li.M {
+  background-image: url(katie/M.webp);
+}
+.arrivals li.N {
+  background-image: url(katie/N.webp);
+}
+.arrivals li.O {
+  background-image: url(katie/O.webp);
+}
+.arrivals li.Q {
+  background-image: url(katie/Q.webp);
+}
+.arrivals li.R {
+  background-image: url(katie/R.webp);
+}
+.arrivals li.S {
+  background-image: url(katie/S.webp);
+}
+.arrivals li.T {
+  background-image: url(katie/T.webp);
+}
+.arrivals li.U {
+  background-image: url(katie/U.webp);
+}
+.arrivals li.V {
+  background-image: url(katie/V.webp);
+}
+.arrivals li.W {
+  background-image: url(katie/W.webp);
+}
+.arrivals li.X {
+  background-image: url(katie/X.webp);
+}
+.arrivals li.Y {
+  background-image: url(katie/Y.webp);
+}
+.arrivals li.Z {
+  background-image: url(katie/Z.webp);
+}
+.arrivals li.AA {
+  background-image: url(katie/AA.webp);
+}
+.arrivals li.BB {
+  background-image: url(katie/BB.webp);
+}
+.arrivals li.CC {
+  background-image: url(katie/CC.webp);
+}
+.arrivals li.DD {
+  background-image: url(katie/DD.webp);
+}
+.arrivals li.EE {
+  background-image: url(katie/EE.webp);
+}
+.arrivals li.FF {
+  background-image: url(katie/FF.webp);
+}
+.arrivals li.GG {
+  background-image: url(katie/GG.webp);
+}
+.arrivals li.HH {
+  background-image: url(katie/HH.webp);
+}
+.arrivals li.II {
+  background-image: url(katie/II.webp);
+}
+.arrivals li.JJ {
+  background-image: url(katie/JJ.webp);
+}
+.arrivals li.KK {
+  background-image: url(katie/KK.webp);
+}
+.arrivals li.LL {
+  background-image: url(katie/LL.webp);
+}
+.arrivals li.MM {
+  background-image: url(katie/MM.webp);
+}
+.arrivals li.NN {
+  background-image: url(katie/NN.webp);
+}
+.arrivals li.OO {
+  background-image: url(katie/OO.webp);
+}
+.arrivals li.PP {
+  background-image: url(katie/PP.webp);
+}
+.arrivals li.QQ {
+  background-image: url(katie/QQ.webp);
+}
+.arrivals li.RR {
+  background-image: url(katie/RR.webp);
+}
+.arrivals li.SS {
+  background-image: url(katie/SS.webp);
+}
+.arrivals li.TT {
+  background-image: url(katie/TT.webp);
+}
+.arrivals li.UU {
+  background-image: url(katie/UU.webp);
+}
+.arrivals li.VV {
+  background-image: url(katie/VV.webp);
+}
+.arrivals li.WW {
+  background-image: url(katie/WW.webp);
+}
+.arrivals li.XX {
+  background-image: url(katie/XX.webp);
+}
+.arrivals li.YY {
+  background-image: url(katie/YY.webp);
+}
+.arrivals li.ZZ {
+  background-image: url(katie/ZZ.webp);
+}
+
+.arrivals li.AAA {
+  background-image: url(katie/AAA.webp);
+}
+.arrivals li.BBB {
+  background-image: url(katie/BBB.webp);
+}
+.arrivals li.CCC {
+  background-image: url(katie/CCC.webp);
+}
+.arrivals li.DDD {
+  background-image: url(katie/DDD.webp);
+}
+.arrivals li.EEE {
+  background-image: url(katie/EEE.webp);
+}
+.arrivals li.FFF {
+  background-image: url(katie/FFF.webp);
+}
+.arrivals li.GGG {
+  background-image: url(katie/GGG.webp);
+}
+.arrivals li.HHH {
+  background-image: url(katie/HHH.webp);
+}
+.arrivals li.III {
+  background-image: url(katie/III.webp);
+}
+.arrivals li.JJJ {
+  background-image: url(katie/JJJ.webp);
+}
+.arrivals li.KKK {
+  background-image: url(katie/KKK.webp);
+}
+.arrivals li.LLL {
+  background-image: url(katie/LLL.webp);
+}
+.arrivals li.MMM {
+  background-image: url(katie/MMM.webp);
+}
+.arrivals li.NNN {
+  background-image: url(katie/NNN.webp);
+}
+.arrivals li.OOO {
+  background-image: url(katie/OOO.webp);
+}
+.arrivals li.PPP {
+  background-image: url(katie/PPP.webp);
+}
+.arrivals li.QQQ {
+  background-image: url(katie/QQQ.webp);
+}
+.arrivals li.RRR {
+  background-image: url(katie/RRR.webp);
+}
+.arrivals li.SSS {
+  background-image: url(katie/SSS.webp);
+}
+.arrivals li.TTT {
+  background-image: url(katie/TTT.webp);
+}
+.arrivals li.UUU {
+  background-image: url(katie/UUU.webp);
+}
+.arrivals li.VVV {
+  background-image: url(katie/VVV.webp);
+}
+.arrivals li.WWW {
+  background-image: url(katie/WWW.webp);
+}
+.arrivals li.XXX {
+  background-image: url(katie/XXX.JPEG);
+}
+.arrivals li.YYY {
+  background-image: url(katie/YYY.JPG);
+}
+.arrivals li.AAAA {
+  background-image: url(katie/AAAA.PNG);
+  background-position: center;
+  background-size: 110%;
+}
+.arrivals li.BBBB {
+  background-image: url(katie/BBBB.png);
+  background-position: center;
+  background-size: 110%;
+}
+.arrivals li.CCCC {
+  background-image: url(katie/CCCC.png);
+  background-position: center;
+  background-size: 110%;
+}
+.arrivals li.DDDD {
+  background-image: url(katie/DDDD.JPG);
+}
+.arrivals li.EEEE {
+  background-image: url(katie/EEEE.JPG);
+}
+.arrivals li.FFFF {
+  background-image: url(katie/FFFF.JPG);
+}
+.arrivals li.GGGG {
+  background-image: url(katie/GGGG.JPG);
+}
+.arrivals li.HHHH {
+  background-image: url(katie/HHHH.PNG);
+  background-position: center;
+  background-size: 110%;
+}
+.arrivals li.IIII {
+  background-image: url(katie/IIII.PNG);
+  background-position: center;
+  background-size: 110%;
+}
+.arrivals li.JJJJ {
+  background-image: url(katie/JJJJ.JPEG);
+}
+.arrivals li.KKKK {
+  background-image: url(katie/KKKK.JPEG);
+}
+.arrivals li.LLLL {
+  background-image: url(katie/LLLL.JPEG);
+}
+.arrivals li.MMMM {
+  background-image: url(katie/MMM.JPEG);
+}
+.arrivals li.NNNN {
+  background-image: url(katie/NNNN.PNG);
+  background-position: center;
+  background-size: 110%;
+}
+.arrivals li.OOOO {
+  background-image: url(katie/OOOO.JPEG);
+}
+.arrivals li.PPPP {
+  background-image: url(katie/PPPP.JPEG);
+}
+.arrivals li.QQQQ {
+  background-image: url(katie/QQQQ.jpeg);
+}
+.arrivals li.RRRR {
+  background-image: url(katie/RRRR.jpeg);
+}
+.arrivals li.SSSS {
+  background-image: url(katie/SSSS.jpeg);
+}
+.arrivals li.TTTT {
+  background-image: url(katie/TTTT.jpeg);
+}
+.arrivals li.UUUU {
+  background-image: url(katie/UUUU.jpeg);
+}
+.arrivals li.VVVV {
+  background-image: url(katie/A1.jpg);
+}
+.arrivals li.WWWW {
+  background-image: url(katie/A2.jpg);
+}
+.arrivals li.XXXX {
+  background-image: url(katie/A3.jpg);
+}
+.arrivals li.YYYY {
+  background-image: url(katie/A4.jpg);
+}
+.arrivals li.ZZZZ {
+  background-image: url(katie/A5.jpg);
+}
+.arrivals li.A6 {
+  background-image: url(katie/A6.jpg);
+}
+.arrivals li.A7 {
+  background-image: url(katie/A7.jpg);
+}
+.arrivals li.A8 {
+  background-image: url(katie/A8.jpg);
+}
+.arrivals li.A9 {
+  background-image: url(katie/A9.jpg);
+}
+.arrivals li.A10 {
+  background-image: url(katie/A10.jpg);
+}
+.arrivals li.B1 {
+  background-image: url(katie/B1.jpg);
+}
+.arrivals li.B2 {
+  background-image: url(katie/B2.jpg);
+}
+.arrivals li.B3 {
+  background-image: url(katie/B3.jpg);
+}
+.arrivals li.B4 {
+  background-image: url(katie/B4.jpg);
+}
+.arrivals li.B5 {
+  background-image: url(katie/B5.jpg);
+}
+.arrivals li.B6 {
+  background-image: url(katie/B6.jpg);
+}
+.arrivals li.B8 {
+  background-image: url(katie/B8.jpg);
+}
+.arrivals li.B9 {
+  background-image: url(katie/B9.jpg);
+}
+.arrivals li.B10 {
+  background-image: url(katie/B10.jpg);
+}
+.arrivals li.C1 {
+  background-image: url(katie/C1.jpg);
+}
+.arrivals li.C2 {
+  background-image: url(katie/C2.jpg);
+}
+.arrivals li.C3 {
+  background-image: url(katie/C3.jpg);
+}
+.arrivals li.C4 {
+  background-image: url(katie/C4.jpg);
+}
+.arrivals li.C5 {
+  background-image: url(katie/C5.jpg);
+}
+.arrivals li.C7 {
+  background-image: url(katie/C7.jpg);
+}
+.arrivals li.C8 {
+  background-image: url(katie/C8.jpg);
+}
+.arrivals li.C9 {
+  background-image: url(katie/C9.jpg);
+}
+.arrivals li.C10 {
+  background-image: url(katie/C10.jpg);
+}
+.arrivals li.D1 {
+  background-image: url(katie/D1.jpg);
+}
+.arrivals li.D2 {
+  background-image: url(katie/D2.jpg);
+}
+.arrivals li.D3 {
+  background-image: url(katie/D3.jpg);
+}
+.arrivals li.D4 {
+  background-image: url(katie/D4.jpg);
+}
+.arrivals li.D5 {
+  background-image: url(katie/D5.jpg);
+}
+.arrivals li.D6 {
+  background-image: url(katie/D6.jpg);
+}
+.arrivals li.D7 {
+  background-image: url(katie/D7.jpg);
+}
+
+@media (min-width: 700px) {
+  main .arrivals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}

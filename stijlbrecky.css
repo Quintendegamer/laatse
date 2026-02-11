@@ -1,0 +1,1148 @@
+:root {
+  font-size: 62.5%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+main ul.arrivals::-webkit-scrollbar {
+  display: none; /* geen scrollbalk bij de arrivals */
+}
+/* hier komt jouw css */
+body {
+  background-color: black;
+}
+header {
+  width: 100%;
+  background-color: burlywood;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 10vh;
+}
+header h1 {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  left: 45vw;
+}
+header nav {
+  display: none;
+}
+header nav.active {
+  display: block;
+}
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 10vh;
+  width: 20%;
+  line-height: 3rem;
+  padding-left: 1rem;
+  background-color: rgb(228, 171, 96);
+  text-align: center;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav ul li {
+  border-top: 1px solid black;
+  margin-right: 1rem;
+}
+header nav ul li:nth-child(1) {
+  border-top: none;
+}
+main .welkom {
+  background-image: url(breck8W/99.webp);
+  height: 85vh;
+  width: 100%;
+  background-position: 60% 70%;
+  background-size: 70%;
+}
+main .arrivals {
+  display: flex;
+  gap: 1rem;
+  overflow: scroll;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+main .arrivals li {
+  flex: 0 0 calc(50% - 0.5rem);
+  scroll-snap-align: start;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+main .arrivals li a {
+  position: relative;
+  left: 18vw;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  top: 45vh;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  width: 20vw;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.arrivals li {
+  height: 50vh;
+}
+
+footer {
+  margin-top: 5rem;
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+}
+footer h1 {
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+@media (min-width: 700px) {
+  main .arrivals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+.arrivals li.A {
+  background-image: url(breck1/A.jpg);
+}
+.arrivals li.B {
+  background-image: url(breck1/B.jpg);
+}
+.arrivals li.C {
+  background-image: url(breck1/C.jpg);
+}
+.arrivals li.D {
+  background-image: url(breck1/D.jpg);
+}
+.arrivals li.E {
+  background-image: url(breck1/E.jpg);
+}
+.arrivals li.F {
+  background-image: url(breck1/F.jpg);
+}
+.arrivals li.G {
+  background-image: url(breck1/G.jpg);
+}
+.arrivals li.H {
+  background-image: url(breck1/H.jpg);
+}
+.arrivals li.I {
+  background-image: url(breck1/I.jpg);
+}
+.arrivals li.J {
+  background-image: url(breck1/J.jpg);
+}
+.arrivals li.K {
+  background-image: url(breck1/K.jpg);
+}
+.arrivals li.L {
+  background-image: url(breck1/L.jpg);
+}
+.arrivals li.M {
+  background-image: url(breck1/M.jpg);
+}
+.arrivals li.N {
+  background-image: url(breck1/N.jpg);
+}
+.arrivals li.O {
+  background-image: url(breck1/O.jpg);
+}
+.arrivals li.P {
+  background-image: url(breck1/P.jpg);
+}
+.arrivals li.Q {
+  background-image: url(breck1/Q.jpg);
+}
+.arrivals li.R {
+  background-image: url(breck1/R.jpg);
+}
+.arrivals li.S {
+  background-image: url(breck1/S.jpg);
+}
+.arrivals li.T {
+  background-image: url(breck1/T.jpg);
+}
+.arrivals li.U {
+  background-image: url(breck1/U.jpg);
+}
+.arrivals li.V {
+  background-image: url(breck1/V.jpg);
+}
+.arrivals li.W {
+  background-image: url(breck1/W.jpg);
+}
+.arrivals li.X {
+  background-image: url(breck1/X.jpg);
+}
+.arrivals li.Y {
+  background-image: url(breck1/Y.jpg);
+}
+.arrivals li.Z {
+  background-image: url(breck1/Z.jpg);
+}
+.arrivals li.AA {
+  background-image: url(breck2/AA.jpg);
+}
+.arrivals li.BB {
+  background-image: url(breck2/BB.jpg);
+}
+.arrivals li.CC {
+  background-image: url(breck2/CC.jpg);
+}
+.arrivals li.DD {
+  background-image: url(breck2/DD.jpg);
+}
+.arrivals li.EE {
+  background-image: url(breck2/EE.jpg);
+}
+.arrivals li.FF {
+  background-image: url(breck2/FF.jpg);
+}
+.arrivals li.GG {
+  background-image: url(breck2/GG.jpg);
+}
+.arrivals li.HH {
+  background-image: url(breck2/HH.jpg);
+}
+.arrivals li.II {
+  background-image: url(breck2/II.jpg);
+}
+.arrivals li.JJ {
+  background-image: url(breck2/JJ.jpg);
+}
+.arrivals li.KK {
+  background-image: url(breck2/KK.jpg);
+}
+.arrivals li.LL {
+  background-image: url(breck2/LL.jpg);
+}
+.arrivals li.MM {
+  background-image: url(breck2/MM.jpg);
+}
+.arrivals li.NN {
+  background-image: url(breck2/NN.jpg);
+}
+.arrivals li.OO {
+  background-image: url(breck2/OO.jpg);
+}
+.arrivals li.PP {
+  background-image: url(breck2/PP.jpg);
+}
+.arrivals li.QQ {
+  background-image: url(breck2/QQ.jpg);
+}
+.arrivals li.RR {
+  background-image: url(breck2/RR.jpg);
+}
+.arrivals li.SS {
+  background-image: url(breck2/SS.jpg);
+}
+.arrivals li.TT {
+  background-image: url(breck2/TT.jpg);
+}
+.arrivals li.UU {
+  background-image: url(breck2/UU.jpg);
+}
+.arrivals li.VV {
+  background-image: url(breck2/VV.jpg);
+}
+.arrivals li.WW {
+  background-image: url(breck2/WW.jpg);
+}
+.arrivals li.XX {
+  background-image: url(breck2/XX.jpg);
+}
+.arrivals li.YY {
+  background-image: url(breck2/YY.jpg);
+}
+.arrivals li.ZZ {
+  background-image: url(breck2/ZZ.jpg);
+}
+.arrivals li.AAA {
+  background-image: url(breck3/AAA.jpg);
+}
+.arrivals li.BBB {
+  background-image: url(breck3/BBB.jpg);
+}
+.arrivals li.CCC {
+  background-image: url(breck3/CCC.jpg);
+}
+.arrivals li.DDD {
+  background-image: url(breck3/DDD.jpg);
+}
+.arrivals li.EEE {
+  background-image: url(breck3/EEE.jpg);
+}
+.arrivals li.FFF {
+  background-image: url(breck3/FFF.jpg);
+}
+.arrivals li.GGG {
+  background-image: url(breck3/GGG.jpg);
+}
+.arrivals li.HHH {
+  background-image: url(breck3/HHH.jpg);
+}
+.arrivals li.III {
+  background-image: url(breck3/III.jpg);
+}
+.arrivals li.JJJ {
+  background-image: url(breck3/JJJ.jpg);
+}
+.arrivals li.KKK {
+  background-image: url(breck3/KKK.jpg);
+}
+.arrivals li.LLL {
+  background-image: url(breck3/LLL.jpg);
+}
+.arrivals li.MMM {
+  background-image: url(breck3/MMM.jpg);
+}
+.arrivals li.NNN {
+  background-image: url(breck3/NNN.jpg);
+}
+.arrivals li.OOO {
+  background-image: url(breck3/OOO.jpg);
+}
+.arrivals li.PPP {
+  background-image: url(breck3/PPP.jpg);
+}
+.arrivals li.QQQ {
+  background-image: url(breck3/QQQ.jpg);
+}
+.arrivals li.RRR {
+  background-image: url(breck3/RRR.jpg);
+}
+.arrivals li.SSS {
+  background-image: url(breck3/SSS.jpg);
+}
+.arrivals li.TTT {
+  background-image: url(breck3/TTT.jpg);
+}
+.arrivals li.UUU {
+  background-image: url(breck3/UUU.jpg);
+}
+.arrivals li.VVV {
+  background-image: url(breck3/VVV.jpg);
+}
+.arrivals li.WWW {
+  background-image: url(breck3/WWW.jpg);
+}
+.arrivals li.XXX {
+  background-image: url(breck3/XXX.jpg);
+}
+.arrivals li.YYY {
+  background-image: url(breck3/YYY.jpg);
+}
+.arrivals li.ZZZ {
+  background-image: url(breck3/ZZZ.jpg);
+}
+.arrivals li.AAAA {
+  background-image: url(breck4/AAAA.jpg);
+}
+.arrivals li.BBBB {
+  background-image: url(breck4/BBBB.jpg);
+}
+.arrivals li.CCCC {
+  background-image: url(breck4/CCCC.jpg);
+}
+.arrivals li.DDDD {
+  background-image: url(breck4/DDDD.jpg);
+}
+.arrivals li.EEEE {
+  background-image: url(breck4/EEEE.jpg);
+}
+.arrivals li.FFFF {
+  background-image: url(breck4/FFFF.jpg);
+}
+.arrivals li.GGGG {
+  background-image: url(breck4/GGGG.jpg);
+}
+.arrivals li.HHHH {
+  background-image: url(breck4/HHHH.jpg);
+}
+.arrivals li.IIII {
+  background-image: url(breck4/IIII.jpg);
+}
+.arrivals li.JJJJ {
+  background-image: url(breck4/JJJJ.jpg);
+}
+.arrivals li.KKKK {
+  background-image: url(breck4/KKKK.jpg);
+}
+.arrivals li.LLLL {
+  background-image: url(breck4/LLLL.jpg);
+}
+.arrivals li.MMMM {
+  background-image: url(breck4/MMMM.jpg);
+}
+.arrivals li.NNNN {
+  background-image: url(breck4/NNNN.jpg);
+}
+.arrivals li.OOOO {
+  background-image: url(breck4/OOOO.jpg);
+}
+.arrivals li.PPPP {
+  background-image: url(breck4/PPPP.jpg);
+}
+.arrivals li.QQQQ {
+  background-image: url(breck4/QQQQ.jpg);
+}
+.arrivals li.RRRR {
+  background-image: url(breck4/RRRR.jpg);
+}
+.arrivals li.SSSS {
+  background-image: url(breck4/SSSS.jpg);
+}
+.arrivals li.TTTT {
+  background-image: url(breck4/TTTT.jpg);
+}
+.arrivals li.UUUU {
+  background-image: url(breck4/UUUU.jpg);
+}
+.arrivals li.VVVV {
+  background-image: url(breck4/VVVV.jpg);
+}
+.arrivals li.WWWW {
+  background-image: url(breck4/WWWW.jpg);
+}
+.arrivals li.XXXX {
+  background-image: url(breck4/XXXX.jpg);
+}
+.arrivals li.YYYY {
+  background-image: url(breck4/YYYY.jpg);
+}
+.arrivals li.ZZZZ {
+  background-image: url(breck4/ZZZZ.jpg);
+}
+
+.arrivals li.AAAAA {
+  background-image: url(breck5/AAAAA.jpg);
+}
+.arrivals li.BBBBB {
+  background-image: url(breck5/BBBBB.jpg);
+}
+.arrivals li.CCCCC {
+  background-image: url(breck5/CCCCC.jpg);
+  background-position: left;
+}
+.arrivals li.DDDDD {
+  background-image: url(breck5/DDDDD.jpg);
+}
+.arrivals li.EEEEE {
+  background-image: url(breck5/EEEEE.jpg);
+}
+.arrivals li.FFFFF {
+  background-image: url(breck5/FFFFF.jpg);
+}
+.arrivals li.GGGGG {
+  background-image: url(breck5/GGGGG.jpg);
+}
+.arrivals li.HHHHH {
+  background-image: url(breck5/HHHHH.jpg);
+}
+.arrivals li.IIIII {
+  background-image: url(breck5/IIIII.jpg);
+}
+.arrivals li.JJJJJ {
+  background-image: url(breck5/JJJJJ.jpg);
+}
+.arrivals li.KKKKK {
+  background-image: url(breck5/KKKKK.jpg);
+}
+.arrivals li.LLLLL {
+  background-image: url(breck5/LLLLL.jpg);
+}
+.arrivals li.MMMMM {
+  background-image: url(breck5/MMMMM.jpg);
+}
+.arrivals li.NNNNN {
+  background-image: url(breck5/NNNNN.jpg);
+}
+.arrivals li.OOOOO {
+  background-image: url(breck5/OOOOO.jpg);
+}
+.arrivals li.PPPPP {
+  background-image: url(breck5/PPPPP.jpg);
+}
+.arrivals li.QQQQQ {
+  background-image: url(breck5/QQQQQ.jpg);
+}
+.arrivals li.RRRRR {
+  background-image: url(breck5/RRRRR.jpg);
+}
+.arrivals li.SSSSS {
+  background-image: url(breck5/SSSSS.jpg);
+}
+.arrivals li.TTTTT {
+  background-image: url(breck5/TTTTT.jpg);
+}
+.arrivals li.UUUUU {
+  background-image: url(breck5/UUUUU.jpg);
+}
+.arrivals li.VVVVV {
+  background-image: url(breck5/VVVVV.jpg);
+}
+.arrivals li.WWWWW {
+  background-image: url(breck5/WWWWW.jpg);
+}
+.arrivals li.XXXXX {
+  background-image: url(breck5/XXXXX.jpg);
+}
+.arrivals li.YYYYY {
+  background-image: url(breck5/YYYYY.jpg);
+}
+.arrivals li.ZZZZZ {
+  background-image: url(breck5/ZZZZZ.jpg);
+}
+.arrivals li.AAAAAA {
+  background-image: url(breck6/AAAAAA.jpg);
+}
+.arrivals li.BBBBBB {
+  background-image: url(breck6/BBBBBB.jpg);
+}
+.arrivals li.CCCCCC {
+  background-image: url(breck6/CCCCCC.jpg);
+}
+.arrivals li.DDDDDD {
+  background-image: url(breck6/DDDDDD.jpg);
+}
+.arrivals li.EEEEEE {
+  background-image: url(breck6/EEEEEE.jpg);
+}
+.arrivals li.FFFFFF {
+  background-image: url(breck6/FFFFFF.jpg);
+}
+.arrivals li.GGGGGG {
+  background-image: url(breck6/GGGGGG.jpg);
+}
+.arrivals li.HHHHHH {
+  background-image: url(breck6/HHHHHH.jpg);
+}
+.arrivals li.IIIIII {
+  background-image: url(breck6/IIIIII.jpg);
+}
+.arrivals li.JJJJJJ {
+  background-image: url(breck6/JJJJJJ.jpg);
+}
+.arrivals li.KKKKKK {
+  background-image: url(breck6/KKKKKK.jpg);
+}
+.arrivals li.LLLLLL {
+  background-image: url(breck6/LLLLLL.jpg);
+}
+.arrivals li.MMMMMM {
+  background-image: url(breck6/MMMMMM.jpg);
+}
+.arrivals li.NNNNNN {
+  background-image: url(breck6/NNNNNN.jpg);
+}
+.arrivals li.OOOOOO {
+  background-image: url(breck6/OOOOOO.jpg);
+}
+.arrivals li.PPPPPP {
+  background-image: url(breck6/PPPPPP.jpg);
+}
+.arrivals li.QQQQQQ {
+  background-image: url(breck6/QQQQQQ.jpg);
+}
+.arrivals li.RRRRRR {
+  background-image: url(breck6/RRRRRR.jpg);
+}
+.arrivals li.SSSSSS {
+  background-image: url(breck6/SSSSSS.jpg);
+}
+.arrivals li.TTTTTT {
+  background-image: url(breck6/TTTTTT.jpg);
+}
+.arrivals li.UUUUUU {
+  background-image: url(breck6/UUUUUU.jpg);
+}
+.arrivals li.VVVVVV {
+  background-image: url(breck6/VVVVVV.jpg);
+}
+.arrivals li.WWWWWW {
+  background-image: url(breck6/WWWWWW.jpg);
+}
+.arrivals li.XXXXXX {
+  background-image: url(breck6/XXXXXX.jpg);
+}
+.arrivals li.YYYYYY {
+  background-image: url(breck6/YYYYYY.jpg);
+}
+.arrivals li.ZZZZZZ {
+  background-image: url(breck6/ZZZZZZ.jpg);
+}
+.arrivals li.AAAAAAA {
+  background-image: url(breck9/AAAAAAA.jpg);
+}
+.arrivals li.BBBBBBB {
+  background-image: url(breck9/BBBBBBB.jpg);
+}
+.arrivals li.CCCCCCC {
+  background-image: url(breck9/CCCCCCC.jpg);
+}
+.arrivals li.DDDDDDD {
+  background-image: url(breck9/DDDDDDD.jpg);
+}
+.arrivals li.EEEEEEE {
+  background-image: url(breck9/EEEEEEE.jpg);
+}
+.arrivals li.FFFFFFF {
+  background-image: url(breck9/FFFFFFF.jpg);
+}
+.arrivals li.GGGGGGG {
+  background-image: url(breck9/GGGGGGG.jpg);
+}
+.arrivals li.HHHHHHH {
+  background-image: url(breck9/HHHHHHH.jpg);
+}
+.arrivals li.IIIIIII {
+  background-image: url(breck9/IIIIIII.JPEG);
+  background-position: center;
+}
+.arrivals li.JJJJJJJ {
+  background-image: url(breck9/JJJJJJJ.jpg);
+  background-position: center;
+  background-size: 120%;
+}
+.arrivals li.KKKKKKK {
+  background-image: url(breck9/KKKKKKK.jpg);
+}
+.arrivals li.LLLLLLL {
+  background-image: url(breck9/LLLLLLL.jpg);
+}
+.arrivals li.MMMMMMM {
+  background-image: url(breck9/MMMMMMM.jpg);
+}
+.arrivals li.NNNNNNN {
+  background-image: url(breck9/NNNNNNN.jpg);
+}
+.arrivals li.OOOOOOO {
+  background-image: url(breck9/OOOOOOO.jpg);
+}
+.arrivals li.PPPPPPP {
+  background-image: url(breck9/PPPPPPP.jpg);
+}
+.arrivals li.QQQQQQQ {
+  background-image: url(breck9/QQQQQQQ.jpg);
+}
+.arrivals li.RRRRRRR {
+  background-image: url(breck9/RRRRRRR.jpg);
+}
+.arrivals li.SSSSSSS {
+  background-image: url(breck9/SSSSSSS.jpg);
+}
+.arrivals li.TTTTTTT {
+  background-image: url(breck9/TTTTTTT.jpg);
+}
+.arrivals li.UUUUUUU {
+  background-image: url(breck9/UUUUUUU.jpg);
+}
+.arrivals li.VVVVVVV {
+  background-image: url(breck9/VVVVVVV.jpg);
+}
+.arrivals li.WWWWWWW {
+  background-image: url(breck9/WWWWWWW.jpg);
+}
+.arrivals li.XXXXXXX {
+  background-image: url(breck9/XXXXXXX.jpg);
+}
+.arrivals li.YYYYYYY {
+  background-image: url(breck9/YYYYYYY.jpg);
+}
+.arrivals li.ZZZZZZZ {
+  background-image: url(breck9/ZZZZZZZ.jpg);
+}
+
+.arrivals li.\31 {
+  background-image: url(brekc7W/1.webp);
+}
+.arrivals li.\32 {
+  background-image: url(brekc7W/2.webp);
+}
+.arrivals li.\33 {
+  background-image: url(brekc7W/3.webp);
+}
+.arrivals li.\34 {
+  background-image: url(brekc7W/4.webp);
+}
+.arrivals li.\35 {
+  background-image: url(brekc7W/5.webp);
+}
+.arrivals li.\36 {
+  background-image: url(brekc7W/6.webp);
+}
+.arrivals li.\37 {
+  background-image: url(brekc7W/7.webp);
+}
+.arrivals li.\38 {
+  background-image: url(brekc7W/8.webp);
+}
+.arrivals li.\39 {
+  background-image: url(brekc7W/9.webp);
+}
+
+.arrivals li.\31 0 {
+  background-image: url(brekc7W/10.webp);
+}
+.arrivals li.\31 1 {
+  background-image: url(brekc7W/11.webp);
+}
+.arrivals li.\31 2 {
+  background-image: url(brekc7W/12.webp);
+}
+.arrivals li.\31 3 {
+  background-image: url(brekc7W/13.webp);
+}
+.arrivals li.\31 4 {
+  background-image: url(brekc7W/14.webp);
+}
+.arrivals li.\31 5 {
+  background-image: url(brekc7W/15.webp);
+}
+.arrivals li.\31 6 {
+  background-image: url(brekc7W/16.webp);
+}
+.arrivals li.\31 7 {
+  background-image: url(brekc7W/17.webp);
+}
+.arrivals li.\31 8 {
+  background-image: url(brekc7W/18.webp);
+}
+.arrivals li.\31 9 {
+  background-image: url(brekc7W/19.webp);
+}
+
+.arrivals li.\32 0 {
+  background-image: url(brekc7W/20.webp);
+}
+.arrivals li.\32 1 {
+  background-image: url(brekc7W/21.webp);
+}
+.arrivals li.\32 2 {
+  background-image: url(brekc7W/22.webp);
+}
+.arrivals li.\32 3 {
+  background-image: url(brekc7W/23.webp);
+}
+.arrivals li.\32 4 {
+  background-image: url(brekc7W/24.webp);
+}
+.arrivals li.\32 5 {
+  background-image: url(brekc7W/25.webp);
+}
+.arrivals li.\32 6 {
+  background-image: url(brekc7W/26.webp);
+}
+.arrivals li.\32 7 {
+  background-image: url(brekc7W/27.webp);
+}
+.arrivals li.\32 8 {
+  background-image: url(brekc7W/28.webp);
+}
+.arrivals li.\32 9 {
+  background-image: url(brekc7W/29.webp);
+}
+
+.arrivals li.\33 0 {
+  background-image: url(brekc7W/30.webp);
+}
+.arrivals li.\33 1 {
+  background-image: url(brekc7W/31.webp);
+}
+.arrivals li.\33 2 {
+  background-image: url(brekc7W/32.webp);
+}
+.arrivals li.\33 3 {
+  background-image: url(brekc7W/33.webp);
+}
+.arrivals li.\33 4 {
+  background-image: url(brekc7W/34.webp);
+}
+.arrivals li.\33 5 {
+  background-image: url(brekc7W/35.webp);
+}
+.arrivals li.\33 6 {
+  background-image: url(brekc7W/36.webp);
+}
+.arrivals li.\33 7 {
+  background-image: url(brekc7W/37.webp);
+}
+.arrivals li.\33 8 {
+  background-image: url(brekc7W/38.webp);
+}
+.arrivals li.\33 9 {
+  background-image: url(brekc7W/39.webp);
+}
+
+.arrivals li.\34 0 {
+  background-image: url(brekc7W/40.webp);
+}
+.arrivals li.\34 1 {
+  background-image: url(brekc7W/41.webp);
+}
+.arrivals li.\34 2 {
+  background-image: url(brekc7W/42.webp);
+}
+.arrivals li.\34 3 {
+  background-image: url(brekc7W/43.webp);
+}
+.arrivals li.\34 4 {
+  background-image: url(brekc7W/44.webp);
+}
+.arrivals li.\34 5 {
+  background-image: url(brekc7W/45.webp);
+}
+.arrivals li.\34 6 {
+  background-image: url(brekc7W/46.webp);
+}
+.arrivals li.\34 7 {
+  background-image: url(brekc7W/47.webp);
+}
+.arrivals li.\34 8 {
+  background-image: url(brekc7W/48.webp);
+}
+.arrivals li.\34 9 {
+  background-image: url(brekc7W/49.webp);
+}
+
+.arrivals li.\35 0 {
+  background-image: url(brekc7W/50.webp);
+}
+.arrivals li.\35 1 {
+  background-image: url(brekc7W/51.webp);
+}
+.arrivals li.\35 2 {
+  background-image: url(brekc7W/52.webp);
+}
+.arrivals li.\35 3 {
+  background-image: url(brekc7W/53.webp);
+}
+.arrivals li.\35 4 {
+  background-image: url(brekc7W/54.webp);
+}
+.arrivals li.\35 5 {
+  background-image: url(brekc7W/55.webp);
+}
+.arrivals li.\35 6 {
+  background-image: url(breck8W/56.webp);
+}
+.arrivals li.\35 7 {
+  background-image: url(breck8W/57.webp);
+}
+.arrivals li.\35 8 {
+  background-image: url(breck8W/58.webp);
+}
+.arrivals li.\35 9 {
+  background-image: url(breck8W/59.webp);
+}
+
+.arrivals li.\36 0 {
+  background-image: url(breck8W/60.webp);
+}
+.arrivals li.\36 1 {
+  background-image: url(breck8W/61.webp);
+}
+.arrivals li.\36 2 {
+  background-image: url(breck8W/62.webp);
+}
+.arrivals li.\36 3 {
+  background-image: url(breck8W/63.webp);
+}
+.arrivals li.\36 4 {
+  background-image: url(breck8W/64.webp);
+}
+.arrivals li.\36 5 {
+  background-image: url(breck8W/65.webp);
+}
+.arrivals li.\36 6 {
+  background-image: url(breck8W/66.webp);
+}
+.arrivals li.\36 7 {
+  background-image: url(breck8W/67.webp);
+}
+.arrivals li.\36 8 {
+  background-image: url(breck8W/68.webp);
+}
+.arrivals li.\36 9 {
+  background-image: url(breck8W/69.webp);
+}
+
+.arrivals li.\37 0 {
+  background-image: url(breck8W/70.webp);
+  background-size: cover;
+  background-position: right;
+}
+.arrivals li.\37 1 {
+  background-image: url(breck8W/71.webp);
+}
+.arrivals li.\37 2 {
+  background-image: url(breck8W/72.webp);
+}
+.arrivals li.\37 3 {
+  background-image: url(breck8W/73.webp);
+}
+.arrivals li.\37 4 {
+  background-image: url(breck8W/74.webp);
+}
+.arrivals li.\37 5 {
+  background-image: url(breck8W/75.webp);
+}
+.arrivals li.\37 6 {
+  background-image: url(breck8W/76.webp);
+}
+.arrivals li.\37 7 {
+  background-image: url(breck8W/77.webp);
+}
+.arrivals li.\37 8 {
+  background-image: url(breck8W/78.webp);
+}
+.arrivals li.\37 9 {
+  background-image: url(breck8W/79.webp);
+}
+
+.arrivals li.\38 0 {
+  background-image: url(breck8W/80.webp);
+}
+.arrivals li.\38 1 {
+  background-image: url(breck8W/81.webp);
+}
+.arrivals li.\38 2 {
+  background-image: url(breck8W/82.webp);
+}
+.arrivals li.\38 3 {
+  background-image: url(breck8W/83.webp);
+}
+.arrivals li.\38 4 {
+  background-image: url(breck8W/84.webp);
+}
+.arrivals li.\38 5 {
+  background-image: url(breck8W/85.webp);
+}
+.arrivals li.\38 6 {
+  background-image: url(breck8W/86.webp);
+}
+.arrivals li.\38 7 {
+  background-image: url(breck8W/87.webp);
+}
+.arrivals li.\38 8 {
+  background-image: url(breck8W/88.webp);
+}
+.arrivals li.\38 9 {
+  background-image: url(breck8W/89.webp);
+}
+
+.arrivals li.\39 0 {
+  background-image: url(breck8W/90.webp);
+}
+.arrivals li.\39 1 {
+  background-image: url(breck8W/91.webp);
+}
+.arrivals li.\39 2 {
+  background-image: url(breck8W/92.webp);
+}
+.arrivals li.\39 3 {
+  background-image: url(breck8W/93.webp);
+}
+.arrivals li.\39 4 {
+  background-image: url(breck8W/94.webp);
+}
+.arrivals li.\39 5 {
+  background-image: url(breck8W/95.webp);
+}
+.arrivals li.\39 6 {
+  background-image: url(breck8W/96.webp);
+}
+.arrivals li.\39 7 {
+  background-image: url(breck8W/97.webp);
+}
+.arrivals li.\39 8 {
+  background-image: url(breck8W/98.webp);
+}
+.arrivals li.\39 9 {
+  background-image: url(breck8W/99.webp);
+}
+
+.arrivals li.\31 00 {
+  background-image: url(breck8W/100.webp);
+}
+.arrivals li.\31 01 {
+  background-image: url(breck8W/101.webp);
+}
+.arrivals li.\31 02 {
+  background-image: url(breck8W/102.webp);
+}
+.arrivals li.\31 03 {
+  background-image: url(breck8W/103.webp);
+}
+.arrivals li.\31 04 {
+  background-image: url(breck8W/104.webp);
+}
+.arrivals li.\31 05 {
+  background-image: url(breck8W/105.webp);
+}
+.arrivals li.\31 06 {
+  background-image: url(breck8W/106.webp);
+}
+.arrivals li.\31 07 {
+  background-image: url(breck8W/107.webp);
+}
+.arrivals li.\31 08 {
+  background-image: url(breck8W/108.webp);
+}
+.arrivals li.\31 09 {
+  background-image: url(breck8W/109.webp);
+}
+
+.arrivals li.\31 10 {
+  background-image: url(breck8W/110.webp);
+}
+.arrivals li.\31 11 {
+  background-image: url(breck8W/111.webp);
+}
+.arrivals li.\31 12 {
+  background-image: url(breck8W/112.webp);
+}
+.arrivals li.\31 13 {
+  background-image: url(breck8W/113.webp);
+}
+.arrivals li.\31 14 {
+  background-image: url(breck8W/114.webp);
+}
+.arrivals li.\31 15 {
+  background-image: url(breck8W/115.webp);
+}
+.arrivals li.\31 16 {
+  background-image: url(breck8W/116.webp);
+}
+.arrivals li.\31 17 {
+  background-image: url(breck8W/117.webp);
+}
+.arrivals li.\31 18 {
+  background-image: url(breck8W/118.webp);
+}
+.arrivals li.\31 19 {
+  background-image: url(breck8W/119.webp);
+}
+
+.arrivals li.\31 20 {
+  background-image: url(breck8W/120.webp);
+}
+.arrivals li.\31 21 {
+  background-image: url(breck8W/121.webp);
+}
+.arrivals li.\31 22 {
+  background-image: url(breck8W/122.webp);
+}
+.arrivals li.\31 23 {
+  background-image: url(breck8W/123.webp);
+}
+.arrivals li.\31 24 {
+  background-image: url(breck8W/124.webp);
+}
+.arrivals li.\31 25 {
+  background-image: url(breck8W/125.webp);
+}
+.arrivals li.A1 {
+  background-image: url(breck10/A1.JPG);
+}
+.arrivals li.A2 {
+  background-image: url(breck10/A2.JPG);
+}
+.arrivals li.A3 {
+  background-image: url(breck10/A3.JPG);
+}
+.arrivals li.A4 {
+  background-image: url(breck10/A4.JPG);
+}
+.arrivals li.A5 {
+  background-image: url(breck10/A5.JPG);
+}
+.arrivals li.A6 {
+  background-image: url(breck10/A6.JPG);
+}
+.arrivals li.A7 {
+  background-image: url(breck10/A7.JPG);
+  background-size: 280%;
+  background-position: center;
+}
+.arrivals li.A8 {
+  background-image: url(breck10/A8.JPG);
+}
+
+.arrivals li.A9 {
+  background-image: url(breck10/A9.PNG);
+}
+.arrivals li.A10 {
+  background-image: url(breck10/A10.PNG);
+}
+.arrivals li.A11 {
+  background-image: url(breck10/A11.PNG);
+  background-size: 120%;
+  background-position: center;
+}
+.arrivals li.A12 {
+  background-image: url(breck10/A12.PNG);
+  background-size: 120%;
+  background-position: center;
+}
+.arrivals li.A13 {
+  background-image: url(breck10/A13.PNG);
+  background-size: 120%;
+  background-position: center;
+}
+.arrivals li.A14 {
+  background-image: url(breck10/A14.JPEG);
+}
+.arrivals li.A15 {
+  background-image: url(breck10/A15.JPEG);
+  background-size: 120%;
+  background-position: top;
+}
+.videos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 video’s per rij */
+  gap: 20px; /* ruimte tussen video’s */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.videos video {
+  width: 100%; /* vult de breedte van de kolom */
+  max-height: 450px; /* nieuwe hoogte limiet */
+  height: auto; /* hoogte past zich aan, aspect-ratio behouden */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  object-fit: contain; /* **belangrijk**: video wordt volledig getoond, niets gaat verloren */
+}
+
+/* Mobiel: 1 video per rij */
+@media (max-width: 600px) {
+  .videos {
+    grid-template-columns: 1fr;
+  }
+}
